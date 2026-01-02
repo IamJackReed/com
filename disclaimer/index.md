@@ -9,8 +9,9 @@ robots: noindex, nofollow
   <h1>Before we continue</h1>
 
   <p>
-    Quick legal thing. I'm sharing thoughts, opinions, experiments, and market notes. Nothing here is financial advice,
-    medical advice, life advice, or any other kind of “you told me to YOLO my pension” advice.
+    Quick legal thing. I'm sharing thoughts, opinions, experiments, and market notes.
+    Nothing here is financial advice, medical advice, life advice, or any other kind of
+    “you told me to YOLO my pension” advice.
   </p>
 
   <p><strong>By continuing you confirm that:</strong></p>
@@ -25,43 +26,53 @@ robots: noindex, nofollow
   <p>If you don’t agree, please close this tab.</p>
 
   <div class="disclaimer-actions">
-    <button id="acceptDisclaimer" type="button">I Understand &amp; Agree</button>
-    <a class="button button--secondary" href="https://www.google.com/" rel="nofollow noopener">I Don’t Agree</a>
+    <button id="acceptDisclaimer" type="button">
+      I Understand &amp; Agree
+    </button>
+
+    <a
+      class="button button--secondary"
+      href="about:blank"
+      rel="nofollow noopener"
+    >
+      I Don’t Agree
+    </a>
   </div>
 </div>
 
 <script>
-  (function () {
-    var button = document.getElementById('acceptDisclaimer');
-    if (!button) return;
+(function () {
+  var ACCEPT_KEY = "disclaimerAccepted:v1";
+  var REDIRECT_KEY = "postDisclaimerRedirect";
 
-    button.addEventListener('click', function () {
-      try {
-        localStorage.setItem('disclaimerAccepted:v1', 'true');
-      } catch (e) {
-        /* localStorage may be unavailable; continue without blocking */
-      }
+  var button = document.getElementById("acceptDisclaimer");
+  if (!button) return;
 
-      // Cookie fallback (helps when localStorage is blocked)
-      try {
-        document.cookie = 'disclaimerAccepted=v1; path=/; max-age=31536000; samesite=lax';
-      } catch (e) {
-        /* ignore */
-      }
+  button.addEventListener("click", function () {
+    // Try localStorage first
+    try {
+      localStorage.setItem(ACCEPT_KEY, "true");
+    } catch (e) {}
 
-      var redirect = null;
-      try {
-        redirect = sessionStorage.getItem('postDisclaimerRedirect');
-      } catch (e) {
-        /* sessionStorage may be unavailable; default redirect will be used */
-      }
+    // Cookie fallback (scoped to this project site)
+    try {
+      document.cookie =
+        "disclaimerAccepted=v1; path={{ site.baseurl | default: '/' }}/; " +
+        "max-age=31536000; samesite=lax";
+    } catch (e) {}
 
-      if (redirect) {
-        try { sessionStorage.removeItem('postDisclaimerRedirect'); } catch (e) {}
-        window.location.assign(redirect);
-      } else {
-        window.location.assign("{{ '/' | relative_url }}");
-      }
-    });
-  })();
+    var redirect = null;
+    try {
+      redirect = sessionStorage.getItem(REDIRECT_KEY);
+      sessionStorage.removeItem(REDIRECT_KEY);
+    } catch (e) {}
+
+    // Go back to where the user intended, or home
+    if (redirect) {
+      window.location.assign(redirect);
+    } else {
+      window.location.assign("{{ '/' | relative_url }}");
+    }
+  });
+})();
 </script>

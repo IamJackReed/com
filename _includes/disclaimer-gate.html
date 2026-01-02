@@ -1,32 +1,27 @@
 <script>
 (function () {
   var ACCEPT_KEY = "disclaimerAccepted:v1";
-  var ACCEPT_COOKIE = "disclaimerAccepted=v1";
   var REDIRECT_KEY = "postDisclaimerRedirect";
 
-  // IMPORTANT: relative_url respects baseurl (/new)
+  // baseurl-safe: /com/disclaimer/
   var disclaimerUrl = "{{ '/disclaimer/' | relative_url }}";
 
-  function norm(p) {
-    return (p || "").replace(/\/+$/, "");
-  }
+  function norm(p) { return (p || "").replace(/\/+$/, ""); }
 
-  function hasAcceptCookie() {
+  function getCookie(name) {
     try {
-      return new RegExp('(?:^|;\\s*)' + ACCEPT_COOKIE.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '(?:;|$)').test(document.cookie);
-    } catch (e) {
-      return false;
-    }
+      var m = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+      return m ? decodeURIComponent(m[2]) : null;
+    } catch (e) { return null; }
   }
 
-  // Prefer localStorage; fall back to cookie (covers stricter privacy modes)
   var accepted = false;
   try {
     accepted = window.localStorage.getItem(ACCEPT_KEY) === "true";
   } catch (e) {
-    accepted = false;
+    // localStorage blocked? fall back to cookie
+    accepted = getCookie("disclaimerAccepted") === "v1";
   }
-  if (!accepted) accepted = hasAcceptCookie();
   if (accepted) return;
 
   var here = norm(window.location.pathname);
@@ -35,7 +30,7 @@
   // Don’t redirect if already on disclaimer page
   if (here === disclaimerHere) return;
 
-  // Save intended destination
+  // Save intended destination (best effort)
   try {
     var full = window.location.pathname + window.location.search + window.location.hash;
     window.sessionStorage.setItem(REDIRECT_KEY, full);
