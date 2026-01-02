@@ -48,7 +48,7 @@ show_modal_on_finish_post: true
 two_columns_layout: true
 
 # Advanced Settings
-baseurl: "/new" # the subpath of your site (starts with a slash, no trailing slash)
+baseurl: "/com" # the subpath of your site (starts with a slash, no trailing slash)
 url: "https://iamjackreed.github.io" # the main domain
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
