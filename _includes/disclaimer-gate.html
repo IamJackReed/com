@@ -2,35 +2,46 @@
 (function () {
   var ACCEPT_KEY = "disclaimerAccepted:v1";
   var REDIRECT_KEY = "postDisclaimerRedirect";
+  var COOKIE_NAME = "disclaimerAccepted";
+  var COOKIE_VALUE = "v1";
 
-  // baseurl-safe: /com/disclaimer/
+  // baseurl-safe for project sites like /com
   var disclaimerUrl = "{{ '/disclaimer/' | relative_url }}";
 
-  function norm(p) { return (p || "").replace(/\/+$/, ""); }
+  function norm(p) {
+    return (p || "").replace(/\/+$/, "");
+  }
 
   function getCookie(name) {
     try {
       var m = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
       return m ? decodeURIComponent(m[2]) : null;
-    } catch (e) { return null; }
+    } catch (e) {
+      return null;
+    }
   }
 
-  var accepted = false;
-  try {
-    accepted = window.localStorage.getItem(ACCEPT_KEY) === "true";
-  } catch (e) {
-    // localStorage blocked? fall back to cookie
-    accepted = getCookie("disclaimerAccepted") === "v1";
+  function hasAccepted() {
+    // Check cookie first (works even when localStorage is blocked)
+    if (getCookie(COOKIE_NAME) === COOKIE_VALUE) return true;
+
+    // Then check localStorage if available
+    try {
+      return window.localStorage.getItem(ACCEPT_KEY) === "true";
+    } catch (e) {
+      return false;
+    }
   }
-  if (accepted) return;
+
+  if (hasAccepted()) return;
 
   var here = norm(window.location.pathname);
   var disclaimerHere = norm(disclaimerUrl);
 
-  // Don’t redirect if already on disclaimer page
+  // Don’t redirect if already on disclaimer page (with or without trailing slash)
   if (here === disclaimerHere) return;
 
-  // Save intended destination (best effort)
+  // Save intended destination
   try {
     var full = window.location.pathname + window.location.search + window.location.hash;
     window.sessionStorage.setItem(REDIRECT_KEY, full);
