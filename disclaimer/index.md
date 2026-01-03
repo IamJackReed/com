@@ -26,53 +26,49 @@ robots: noindex, nofollow
   <p>If you don’t agree, please close this tab.</p>
 
   <div class="disclaimer-actions">
-    <button id="acceptDisclaimer" type="button">
+    <button id="disclaimer-accept" type="button">
       I Understand &amp; Agree
     </button>
 
-    <a
-      class="button button--secondary"
-      href="about:blank"
-      rel="nofollow noopener"
-    >
+    <button id="disclaimer-reject" type="button" class="button button--secondary">
       I Don’t Agree
-    </a>
+    </button>
   </div>
 </div>
 
 <script>
 (function () {
   var ACCEPT_KEY = "disclaimerAccepted:v1";
-  var REDIRECT_KEY = "postDisclaimerRedirect";
 
-  var button = document.getElementById("acceptDisclaimer");
-  if (!button) return;
+  var acceptBtn = document.getElementById("disclaimer-accept");
+  var rejectBtn = document.getElementById("disclaimer-reject");
 
-  button.addEventListener("click", function () {
-    // Try localStorage first
-    try {
-      localStorage.setItem(ACCEPT_KEY, "true");
-    } catch (e) {}
+  if (acceptBtn) {
+    acceptBtn.addEventListener("click", function () {
+      try {
+        localStorage.setItem(ACCEPT_KEY, "true");
+      } catch (e) {}
 
-    // Cookie fallback (scoped to this project site)
-    try {
-      document.cookie =
-        "disclaimerAccepted=v1; path={{ site.baseurl | default: '/' }}/; " +
-        "max-age=31536000; samesite=lax";
-    } catch (e) {}
+      // Cookie fallback (scoped to /com/)
+      try {
+        document.cookie =
+          "disclaimerAccepted=true; path=/com/; max-age=31536000; samesite=lax";
+      } catch (e) {}
 
-    var redirect = null;
-    try {
-      redirect = sessionStorage.getItem(REDIRECT_KEY);
-      sessionStorage.removeItem(REDIRECT_KEY);
-    } catch (e) {}
+      // Redirect to site root
+      window.location.href = "{{ '/' | relative_url }}";
+    });
+  }
 
-    // Go back to where the user intended, or home
-    if (redirect) {
-      window.location.assign(redirect);
-    } else {
-      window.location.assign("{{ '/' | relative_url }}");
-    }
-  });
+  if (rejectBtn) {
+    rejectBtn.addEventListener("click", function () {
+      try {
+        localStorage.setItem(ACCEPT_KEY, "false");
+      } catch (e) {}
+
+      // Clear page / exit politely
+      window.location.href = "about:blank";
+    });
+  }
 })();
 </script>
