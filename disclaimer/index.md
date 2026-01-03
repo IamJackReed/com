@@ -26,11 +26,11 @@ robots: noindex, nofollow
   <p>If you don’t agree, please close this tab.</p>
 
   <div class="disclaimer-actions">
-    <button id="disclaimer-accept" type="button">
+    <button id="acceptDisclaimer" type="button">
       I Understand &amp; Agree
     </button>
 
-    <button id="disclaimer-reject" type="button" class="button button--secondary">
+    <button id="rejectDisclaimer" type="button" class="button button--secondary">
       I Don’t Agree
     </button>
   </div>
@@ -38,36 +38,64 @@ robots: noindex, nofollow
 
 <script>
 (function () {
-  var ACCEPT_KEY = "disclaimerAccepted:v1";
+  // MUST match _includes/disclaimer-gate.html
+  var ACCEPT_KEY   = "disclaimerAccepted:v1";
+  var REDIRECT_KEY = "postDisclaimerRedirect";
+  var COOKIE_NAME  = "disclaimerAccepted";
+  var COOKIE_VALUE = "v1";
 
-  var acceptBtn = document.getElementById("disclaimer-accept");
-  var rejectBtn = document.getElementById("disclaimer-reject");
+  var acceptBtn = document.getElementById("acceptDisclaimer");
+  var rejectBtn = document.getElementById("rejectDisclaimer");
+
+  function setCookie(name, value, maxAgeSeconds) {
+    try {
+      var basePath = "{{ site.baseurl | default: '/' }}";
+      if (!basePath.endsWith("/")) basePath += "/";
+      document.cookie =
+        encodeURIComponent(name) + "=" + encodeURIComponent(value) +
+        "; path=" + basePath +
+        "; max-age=" + (maxAgeSeconds || 0) +
+        "; samesite=lax";
+    } catch (e) {}
+  }
 
   if (acceptBtn) {
-    acceptBtn.addEventListener("click", function () {
+    acceptBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // localStorage primary
+      try { localStorage.setItem(ACCEPT_KEY, "true"); } catch (e) {}
+
+      // cookie fallback (value MUST be "v1")
+      setCookie(COOKIE_NAME, COOKIE_VALUE, 31536000);
+
+      // return user to intended page if available
+      var redirect = null;
       try {
-        localStorage.setItem(ACCEPT_KEY, "true");
+        redirect = sessionStorage.getItem(REDIRECT_KEY);
+        sessionStorage.removeItem(REDIRECT_KEY);
       } catch (e) {}
 
-      // Cookie fallback (scoped to /com/)
-      try {
-        document.cookie =
-          "disclaimerAccepted=true; path=/com/; max-age=31536000; samesite=lax";
-      } catch (e) {}
-
-      // Redirect to site root
-      window.location.href = "{{ '/' | relative_url }}";
+      if (redirect) {
+        window.location.assign(redirect);
+      } else {
+        window.location.assign("{{ '/' | relative_url }}");
+      }
     });
   }
 
   if (rejectBtn) {
-    rejectBtn.addEventListener("click", function () {
-      try {
-        localStorage.setItem(ACCEPT_KEY, "false");
-      } catch (e) {}
+    rejectBtn.addEventListener("click", function (e) {
+      e.preventDefault();
 
-      // Clear page / exit politely
-      window.location.href = "about:blank";
+      // persist rejection
+      try { localStorage.setItem(ACCEPT_KEY, "false"); } catch (e) {}
+
+      // clear cookie (so gate never treats as accepted)
+      setCookie(COOKIE_NAME, "", 0);
+
+      // exit
+      window.location.assign("about:blank");
     });
   }
 })();
