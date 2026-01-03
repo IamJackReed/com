@@ -1,18 +1,20 @@
+---
+---
 (function () {
   var ACCEPT_KEY = "disclaimerAccepted:v1";
   var REDIRECT_KEY = "postDisclaimerRedirect";
   var COOKIE_NAME = "disclaimerAccepted";
   var COOKIE_VALUE = "v1";
 
+  var HOME_URL = "{{ '/' | relative_url }}";
+  var BASE_PATH = "{{ site.baseurl | default: '/' }}";
+  if (!BASE_PATH.endsWith("/")) BASE_PATH += "/";
+
   function setCookie(name, value, maxAgeSeconds) {
     try {
-      // baseurl-safe cookie path (e.g. /com/)
-      var basePath = "{{ site.baseurl | default: '/' }}";
-      if (!basePath.endsWith("/")) basePath += "/";
-
       document.cookie =
         encodeURIComponent(name) + "=" + encodeURIComponent(value) +
-        "; path=" + basePath +
+        "; path=" + BASE_PATH +
         "; max-age=" + (maxAgeSeconds || 0) +
         "; samesite=lax";
     } catch (e) {}
@@ -34,7 +36,7 @@
         sessionStorage.removeItem(REDIRECT_KEY);
       } catch (e3) {}
 
-      window.location.assign(redirect || "{{ '/' | relative_url }}");
+      window.location.assign(redirect || HOME_URL);
     });
   }
 
