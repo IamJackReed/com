@@ -26,14 +26,13 @@ robots: noindex, nofollow
   <p>If you don’t agree, please close this tab.</p>
 
   <div class="disclaimer-actions">
-    <button id="acceptDisclaimer" type="button">
-      I Understand &amp; Agree
-    </button>
+  <button id="acceptDisclaimer" type="button">
+    I Understand &amp; Agree
+  </button>
 
-    <button id="rejectDisclaimer" type="button" class="button button--secondary">
-      I Don’t Agree
-    </button>
-  </div>
+  <button id="rejectDisclaimer" type="button" class="button button--secondary">
+    I Don’t Agree
+  </button>
 </div>
 
 <script>
