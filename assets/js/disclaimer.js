@@ -47,7 +47,7 @@
       try { localStorage.setItem(ACCEPT_KEY, "false"); } catch (e2) {}
       setCookie(COOKIE_NAME, "", 0);
 
-      window.location.assign("about:blank");
+      window.location.assign("https://www.google.com/");
     });
   }
 })();
