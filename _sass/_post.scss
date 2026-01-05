@@ -394,7 +394,7 @@
   height: 38px;
   padding: rem(30px) 0;
   border-bottom: 1px solid $themeColor;
-  background-color: #fff;
+  background-color: #FFF1E0;
   transition: bottom 0.5s;
 
   .bar {
@@ -467,14 +467,14 @@
     float: left;
     display: block;
     height: rem(5px);
-    background-color: #ccc;
+    background-color: #FFF1E0;
   }
 
   .time-completed,
   .time-remaining {
     @include mainFont(400);
     font-size: rem(18px);
-    color: #fff;
+    color: #FFF1E0;
   }
 
   .time-completed {
@@ -511,7 +511,7 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: rem(16px);
-    color: #fff;
+    color: #FFF1E0;
     padding-right: rem(20px);
 
     @include media(">=sm") {
@@ -526,7 +526,7 @@
     button {
       background-color: transparent;
       border: 0;
-      color: #fff;
+      color: #FFF1E0;
       cursor: pointer;
       display: inline-block;
       font-size: rem(13px);
