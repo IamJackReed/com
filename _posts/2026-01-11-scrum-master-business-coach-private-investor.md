@@ -2,7 +2,7 @@
 date: 2026-01-11 21:58:00
 layout: post
 title: Scrum Master.<br>Business Coach.<br>Private Investor.
-subtitle:  Living and working in London writing about teams, products, organisations, and financial markets.
+subtitle:  Working in London writing about teams, products, organisations, and financial markets.
 description: About me.
 image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
 optimized_image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
