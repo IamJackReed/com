@@ -3,14 +3,14 @@ date: 2026-01-11 21:58:00
 layout: post
 title: Scrum Master.<br>Business Coach.<br>Private Investor.
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Professional Scrum Master, business coach, and private investor. Living and working in London writing about teams, products, organisations, and financial markets.
 image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
 optimized_image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
 category: work
 tags:
   - work
   - career
-author: mranderson
+author: J.Reed
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
