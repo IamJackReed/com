@@ -1,5 +1,5 @@
 ---
-date: 2025-01-11 21:58:00
+date: 2026-01-11 21:58:00
 layout: post
 title: Scrum Master. Business Coach. Private Investor.
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
