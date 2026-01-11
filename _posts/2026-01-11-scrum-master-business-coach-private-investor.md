@@ -1,7 +1,7 @@
 ---
 date: 2026-01-11 21:58:00
 layout: post
-title: Scrum Master.<br>Business Coach.<br>Private Investor
+title: Scrum Master.<br>Business Coach.<br>Private Investor.
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
