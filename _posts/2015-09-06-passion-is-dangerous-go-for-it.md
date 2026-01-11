@@ -1,11 +1,11 @@
 ---
-date: 2015-09-06 12:00:00
+date: 2025-01-11 21:58:00
 layout: post
-title: Passion is dangerous, go for it!
+title: Scrum Master. Business Coach. Private Investor.
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559825288/theme17_nlndhx.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825288/theme17_nlndhx.jpg
+image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
+optimized_image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
 category: work
 tags:
   - work
