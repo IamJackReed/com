@@ -20,22 +20,20 @@ I partner with organisations to connect strategy, product, and execution — and
 > **Short version:** I’m trying to understand how value is created — inside organisations and in the markets that price them.
 
 ---
-
 ## A Systems View of Work and Markets
 
 If you spend enough time inside organisations, you start to notice a pattern: most problems aren’t caused by a lack of effort or talent. They emerge from **misaligned incentives**, unclear strategy, or broken feedback loops between the people doing the work and the people deciding what matters.
 
-I’ve spent the last decade helping teams close those gaps. Some days that means coaching teams on how to self-manage. Other days it’s supporting Product Owners on prioritisation and discovery. Occasionally it involves partnering with leadership to redesign the structures that shape behaviour in the first place.
+I’ve spent the last decade helping teams close those gaps. Some days that means coaching teams on self-managing. Other days it’s supporting Product Owners on prioritisation and discovery. Occasionally it involves partnering with leadership to redesign the structures that shape behaviour in the first place.
 
 **Value emerges when strategy, product, and execution reinforce each other** — not when they operate independently.
 
 The same pattern shows up in public markets: businesses that compound over long periods tend to have tight alignment between incentives, strategy, product, and execution. Eventually, the market notices.
 
 ---
-
 ## How I Work With Organisations
 
-My work is practical and empirical. I use Scrum as a way to expose information and shorten feedback loops — not as a checklist of ceremonies.
+My work is practical and empirical. I use Scrum as a way to expose information and shorten feedback loops — not as a checklist of events.
 
 Broadly speaking, I operate across three overlapping layers:
 
@@ -53,7 +51,6 @@ I care about environments where people can do good work without needing heroics 
 > I’m more interested in repeatable systems than one-off heroics.
 
 ---
-
 ### 2. Product & Value
 
 I support Product Owners and product leaders in their accountability to maximise product value. That usually means:
@@ -67,7 +64,6 @@ I support Product Owners and product leaders in their accountability to maximise
 A lot of product problems are really **information problems**. The work is happening, but nobody can see how it maps to value.
 
 ---
-
 ### 3. Organisation & Change
 
 At the organisational level, I partner with leadership to:
@@ -80,7 +76,6 @@ At the organisational level, I partner with leadership to:
 Beyond “rolling out Scrum”, I’m interested in whether the **way we work** is coherent with the **results we expect**.
 
 ---
-
 ## Investing: Research-First, Not Noise-First
 
 Outside of work, I invest in public markets with a research-first, value-oriented approach.
@@ -106,7 +101,6 @@ Some of that research will appear here — not as financial advice or trade aler
 > I’m much more interested in understanding a business than guessing a price.
 
 ---
-
 ## A Career That Makes More Sense in Reverse
 
 My route into this work wasn’t linear.
@@ -124,7 +118,6 @@ If you zoom out, the path looks something like:
 It’s not the traditional CV narrative, but it is coherent.
 
 ---
-
 ## Why This Site Exists
 
 This site is where I:
@@ -146,7 +139,6 @@ Just curiosity, research, and an attempt to think in public about complex system
 If any of that resonates, you’re very welcome to stick around, read, disagree, or build on the ideas.
 
 ---
-
 ## Who This Might Be Useful For
 
 This site — and my work generally — tends to be most useful for:
@@ -160,7 +152,6 @@ This site — and my work generally — tends to be most useful for:
 If you recognise yourself in any of those, you’re in the right place.
 
 ---
-
 ## Credentials (Third-Person)
 
 **Jack Reed** is a Scrum Master, business coach, and private investor with experience across transport, government services, med-tech, and financial services, including a FTSE 100 environment.
@@ -168,7 +159,6 @@ If you recognise yourself in any of those, you’re in the right place.
 He holds a Postgraduate Certificate in Business & Personal Coaching and multiple advanced Scrum.org credentials, including **Professional Scrum Master III (PSM III)** — a credential held by only a small number of practitioners worldwide. He is also a **Certified Agile Leader (CAL1)** and holds certifications in product ownership, product discovery & validation, system modelling, and scaled Scrum.
 
 ---
-
 ## Micro Bio
 
 Scrum Master, business coach, and private investor. I focus on how organisations create value — and I invest in businesses that do the same.
