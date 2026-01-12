@@ -2,7 +2,7 @@
 date: 2026-01-11 21:58:00
 layout: post
 title: Scrum Master.<br>Business Coach.<br>Private Investor.
-subtitle:  Working in London writing about teams, products, organisations, and financial markets.
+subtitle: Working in London writing about teams, products, organisations, and financial markets.
 description: About me.
 image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
 optimized_image: https://res.cloudinary.com/dj6poiukp/image/upload/v1768168592/profile-header_mlpdkl.png
@@ -13,114 +13,162 @@ tags:
 author: J.Reed
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+## I care about how teams make decisions, how products create value, and how markets price information.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+I partner with organisations to connect strategy, product, and execution — and I invest in businesses that do the same internally. I’m interested in how value is created: how teams make decisions, how products create value, how incentives shape behaviour, and how markets eventually price the results.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+> **Short version:** I’m trying to understand how value is created — inside organisations and in the markets that price them.
 
-## Inline HTML elements
+---
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+## A Systems View of Work and Markets
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+If you spend enough time inside organisations, you start to notice a pattern: most problems aren’t caused by a lack of effort or talent. They emerge from **misaligned incentives**, unclear strategy, or broken feedback loops between the people doing the work and the people deciding what matters.
 
-Most of these elements are styled by browsers with few modifications on our part.
+I’ve spent the last decade helping teams close those gaps. Some days that means coaching teams on how to self-manage. Other days it’s supporting Product Owners on prioritisation and discovery. Occasionally it involves partnering with leadership to redesign the structures that shape behaviour in the first place.
 
-# Heading 1
+**Value emerges when strategy, product, and execution reinforce each other** — not when they operate independently.
 
-## Heading 2
+The same pattern shows up in public markets: businesses that compound over long periods tend to have tight alignment between incentives, strategy, product, and execution. Eventually, the market notices.
 
-### Heading 3
+---
 
-#### Heading 4
+## How I Work With Organisations
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+My work is practical and empirical. I use Scrum as a way to expose information and shorten feedback loops — not as a checklist of ceremonies.
 
-## Code
+Broadly speaking, I operate across three overlapping layers:
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+### 1. People & Teams
 
-```js
-// Example can be run directly in your JavaScript console
+I work with teams to:
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+- build **self-management** and shared ownership  
+- use experiments rather than opinions to settle debates  
+- create transparency around what’s really happening in delivery  
+- treat leadership as an **attitude**, not a job title  
 
-// Call the function
-adder(2, 6);
-// > 8
-```
+I care about environments where people can do good work without needing heroics to get basic things done.
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+> I’m more interested in repeatable systems than one-off heroics.
 
-## Lists
+---
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+### 2. Product & Value
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
+I support Product Owners and product leaders in their accountability to maximise product value. That usually means:
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+- clarifying Product Goals and outcomes  
+- making work, technical debt, and risk visible  
+- improving how we **prioritise** and say “no”  
+- connecting discovery work to delivery work  
+- shortening the loop between customer behaviour and product decisions  
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+A lot of product problems are really **information problems**. The work is happening, but nobody can see how it maps to value.
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+---
 
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+### 3. Organisation & Change
 
-## Images
+At the organisational level, I partner with leadership to:
 
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
+- align strategy with how teams actually work  
+- understand the systems and incentives driving current behaviour  
+- use systems thinking and modelling to make complexity visible  
+- design structures that support the outcomes we say we care about  
 
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+Beyond “rolling out Scrum”, I’m interested in whether the **way we work** is coherent with the **results we expect**.
 
-## Tables
+---
 
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+## Investing: Research-First, Not Noise-First
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+Outside of work, I invest in public markets with a research-first, value-oriented approach.
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+I tend to:
+
+- look at **micro-caps and AIM-listed businesses** where informational edges may still exist  
+- occasionally hold larger FTSE 250 or FTSE 100 companies for durability  
+- use my Stocks & Shares ISA for broader, global exposure through funds influenced by Andrew Craig’s *Own the World*  
+
+I’m not particularly interested in chasing the latest narrative or short-term price moves. I care more about:
+
+- how a business makes money  
+- its **unit economics** and underlying drivers  
+- the incentives shaping management decisions  
+- the competitive dynamics and industry structure  
+- whether the business has a durable way to keep creating value  
+
+Reading company reports, regulatory filings, and industry notes is not everyone’s idea of fun. For me, it’s a way of stress-testing my own thinking.
+
+Some of that research will appear here — not as financial advice or trade alerts, but as a record of how I’m trying to make sense of businesses and markets.
+
+> I’m much more interested in understanding a business than guessing a price.
+
+---
+
+## A Career That Makes More Sense in Reverse
+
+My route into this work wasn’t linear.
+
+- I started as a **paratrooper** in the British Army, where discipline, focus under pressure, and clear procedures weren’t optional.  
+- I then spent several years managing venues in the **hospitality industry** in Spain, where you quickly learn about people, incentives, and real-world feedback.  
+- From there I moved into **software and product delivery**, working across transport, gov.uk services, med-tech, and financial services — from startups through to a FTSE 100 environment.
+
+Along the way I became increasingly interested in how people collaborate, how products are built, and how organisations adapt (or don’t). That curiosity naturally extended into investing: if you care about how value is created inside a company, it’s a short step to asking how that value is recognised (or mispriced) in the market.
+
+If you zoom out, the path looks something like:
+
+> **Teams → Products → Organisations → Markets**
+
+It’s not the traditional CV narrative, but it is coherent.
+
+---
+
+## Why This Site Exists
+
+This site is where I:
+
+- write about **teams, products, organisations, and markets**  
+- share some of the research behind my investments  
+- explore how incentives and systems shape behaviour  
+- document experiments, mistakes, and lessons  
+
+There are a few things you *won’t* find here:
+
+- no get-rich-quick schemes  
+- no “secret frameworks”  
+- no trade alerts or price targets  
+- no pretending the world is simpler than it is  
+
+Just curiosity, research, and an attempt to think in public about complex systems.
+
+If any of that resonates, you’re very welcome to stick around, read, disagree, or build on the ideas.
+
+---
+
+## Who This Might Be Useful For
+
+This site — and my work generally — tends to be most useful for:
+
+- **Leaders** trying to connect strategy with day-to-day execution  
+- **Product people** who care about value, not just velocity  
+- **Teams** who want more autonomy and clearer feedback  
+- **Investors and founders** interested in how internal systems drive long-term outcomes  
+- **Curious generalists** who enjoy thinking about incentives, systems, and decision-making  
+
+If you recognise yourself in any of those, you’re in the right place.
+
+---
+
+## Credentials (Third-Person)
+
+**Jack Reed** is a Scrum Master, business coach, and private investor with experience across transport, government services, med-tech, and financial services, including a FTSE 100 environment.
+
+He holds a Postgraduate Certificate in Business & Personal Coaching and multiple advanced Scrum.org credentials, including **Professional Scrum Master III (PSM III)** — a credential held by only a small number of practitioners worldwide. He is also a **Certified Agile Leader (CAL1)** and holds certifications in product ownership, product discovery & validation, system modelling, and scaled Scrum.
+
+---
+
+## Micro Bio
+
+Scrum Master, business coach, and private investor. I focus on how organisations create value — and I invest in businesses that do the same.
