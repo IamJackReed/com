@@ -21,72 +21,57 @@ I partner with organisations to connect strategy, product, and execution — and
 
 ---
 
-<section class="focus-section">
-  <div class="focus-kicker">Focus</div>
+<section class="focus focus--editorial">
+  <p class="focus-kicker">Focus</p>
   <h2 class="focus-heading">What Keeps Me Up At Night</h2>
-  <p class="focus-intro">
-    These are the main areas that I spend my time thinking, researching, and writing about.
+  <p class="focus-subtitle">
+    The main lenses I use when I’m working with teams, organisations, and markets.
   </p>
 
   <div class="focus-grid">
-
     <article class="focus-card">
-      <div class="focus-card-body">
-        <p class="focus-card-eyebrow">Teams</p>
-        <h3 class="focus-card-title">People and teams</h3>
-        <p class="focus-card-text">
-          Patterns in how groups work, resolve conflict, and scale without burning people out.
-        </p>
-        <a class="focus-card-link" href="{{ site.baseurl }}/People&Teams">
-          Read <span aria-hidden="true">›</span>
-        </a>
-      </div>
-      <div class="focus-card-media"></div>
+      <header class="focus-card-header">
+        <p class="focus-section-label">Teams</p>
+        <h3 class="focus-title">People and teams</h3>
+      </header>
+      <p class="focus-text">
+        How groups communicate, resolve conflict, and build the kind of trust that survives real work.
+      </p>
+      <a href="{{ site.baseurl }}/People&Teams" class="focus-link">Read articles</a>
     </article>
 
     <article class="focus-card">
-      <div class="focus-card-body">
-        <p class="focus-card-eyebrow">Product</p>
-        <h3 class="focus-card-title">Product strategy and delivery</h3>
-        <p class="focus-card-text">
-          Discovery, prioritisation, and getting things shipped well without losing sight of outcomes.
-        </p>
-        <a class="focus-card-link" href="{{ site.baseurl }}/Product">
-          Read <span aria-hidden="true">›</span>
-        </a>
-      </div>
-      <div class="focus-card-media"></div>
+      <header class="focus-card-header">
+        <p class="focus-section-label">Product</p>
+        <h3 class="focus-title">Product strategy and delivery</h3>
+      </header>
+      <p class="focus-text">
+        Discovery, prioritisation, and getting meaningful things into the hands of customers without losing the plot.
+      </p>
+      <a href="{{ site.baseurl }}/Product" class="focus-link">Read articles</a>
     </article>
 
     <article class="focus-card">
-      <div class="focus-card-body">
-        <p class="focus-card-eyebrow">Change</p>
-        <h3 class="focus-card-title">Organisation and change</h3>
-        <p class="focus-card-text">
-          How organisations adapt, resist, and transform over time — and what gets in the way.
-        </p>
-        <a class="focus-card-link" href="{{ site.baseurl }}/Organisation&Change">
-          Read <span aria-hidden="true">›</span>
-        </a>
-      </div>
-      <div class="focus-card-media"></div>
+      <header class="focus-card-header">
+        <p class="focus-section-label">Change</p>
+        <h3 class="focus-title">Organisation and change</h3>
+      </header>
+      <p class="focus-text">
+        The dynamics behind how organisations adapt, resist, and slowly (or suddenly) reinvent themselves.
+      </p>
+      <a href="{{ site.baseurl }}/Organisation&Change" class="focus-link">Read articles</a>
     </article>
 
     <article class="focus-card">
-      <div class="focus-card-body">
-        <p class="focus-card-eyebrow">Investing</p>
-        <h3 class="focus-card-title">Markets and investing</h3>
-        <p class="focus-card-text">
-          Research, thesis development, and trade notes from the market.
-        </p>
-        <!-- Update this URL later if you add a dedicated Investing page -->
-        <a class="focus-card-link" href="{{ site.baseurl }}/posts">
-          Read <span aria-hidden="true">›</span>
-        </a>
-      </div>
-      <div class="focus-card-media"></div>
+      <header class="focus-card-header">
+        <p class="focus-section-label">Investing</p>
+        <h3 class="focus-title">Markets and investing</h3>
+      </header>
+      <p class="focus-text">
+        Research notes, theses, and reflections from treating markets as a feedback loop, not a casino.
+      </p>
+      <a href="{{ site.baseurl }}/posts" class="focus-link">Read articles</a>
     </article>
-
   </div>
 </section>
 
