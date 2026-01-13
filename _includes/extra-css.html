@@ -1,23 +1,11 @@
 <style>
-  /* Shared base */
   .focus {
-    max-width: 1160px;
-    margin: 4.5rem auto;
-    padding: 0 1.5rem;
-  }
-  .focus-heading {
-    line-height: 1.2;
-  }
-  .focus-subtitle {
-    max-width: 640px;
-  }
-
-  /* ============= Variant A: Minimalist ============= */
-  .focus--minimal {
     max-width: 1120px;
     margin: 5rem auto 4rem;
+    padding: 0 1.5rem;
   }
-  .focus--minimal .focus-kicker {
+
+  .focus-kicker {
     text-transform: uppercase;
     letter-spacing: 0.16em;
     font-size: 0.75rem;
@@ -26,22 +14,28 @@
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  .focus--minimal .focus-heading {
+
+  .focus-heading {
     text-align: center;
     font-size: 2.25rem;
+    line-height: 1.2;
     margin: 0 0 0.75rem;
   }
-  .focus--minimal .focus-subtitle {
+
+  .focus-subtitle {
     text-align: center;
     color: #555;
+    max-width: 640px;
     margin: 0 auto 3rem;
   }
-  .focus--minimal .focus-grid {
+
+  .focus-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5rem;
   }
-  .focus--minimal .focus-card {
+
+  .focus-card {
     border: 1px solid #e2e2e2;
     border-radius: 12px;
     padding: 1.5rem 1.5rem 1.25rem;
@@ -52,241 +46,56 @@
     transition: box-shadow 0.18s ease-out, transform 0.18s ease-out,
       border-color 0.18s ease-out;
   }
-  .focus--minimal .focus-eyebrow {
+
+  .focus-eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.14em;
     font-size: 0.7rem;
     color: #888;
     margin: 0;
   }
-  .focus--minimal .focus-title {
+
+  .focus-title {
     font-size: 1.1rem;
     margin: 0;
   }
-  .focus--minimal .focus-text {
+
+  .focus-text {
     font-size: 0.9rem;
     color: #555;
     margin: 0 0 0.75rem;
   }
-  .focus--minimal .focus-link {
+
+  .focus-link {
     margin-top: auto;
     font-size: 0.9rem;
     text-decoration: none;
     color: #111;
     font-weight: 500;
   }
-  .focus--minimal .focus-link span {
+
+  .focus-link span {
     display: inline-block;
     transform: translateY(1px);
   }
-  .focus--minimal .focus-card:hover {
+
+  .focus-card:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
     border-color: #111;
   }
 
-  /* ============= Variant B: Editorial ============= */
-  .focus--editorial {
-    max-width: 1160px;
-    margin: 5rem auto 4.5rem;
-    padding: 0 1.5rem 3rem;
-    background: #fff9f5;
-    border-top: 4px solid #e4cbb0;
-    border-bottom: 1px solid #f0dfcf;
-  }
-  .focus--editorial .focus-kicker {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    font-size: 0.75rem;
-    color: #85725c;
-    margin: 1.75rem 0 0.35rem;
-  }
-  .focus--editorial .focus-heading {
-    text-align: center;
-    font-size: 2.1rem;
-    margin: 0 0 0.75rem;
-  }
-  .focus--editorial .focus-subtitle {
-    text-align: center;
-    margin: 0 auto 2.5rem;
-    color: #5f5142;
-    font-size: 0.98rem;
-  }
-  .focus--editorial .focus-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.5rem;
-  }
-  .focus--editorial .focus-card {
-    background: #fff;
-    border: 1px solid #eed9c4;
-    padding: 1.5rem 1.4rem 1.4rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .focus--editorial .focus-card-header {
-    margin-bottom: 0.75rem;
-  }
-  .focus--editorial .focus-section-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: #9b8468;
-    margin: 0 0 0.35rem;
-  }
-  .focus--editorial .focus-title {
-    font-size: 1.05rem;
-    margin: 0;
-  }
-  .focus--editorial .focus-text {
-    font-size: 0.9rem;
-    color: #5f5142;
-    line-height: 1.5;
-    margin: 0 0 0.75rem;
-  }
-  .focus--editorial .focus-link {
-    margin-top: auto;
-    font-size: 0.86rem;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    color: #3f3428;
-    font-weight: 500;
-  }
-  .focus--editorial .focus-card:hover {
-    background: #fff7ef;
-  }
-
-  /* ============= Variant C: Product/Tech ============= */
-  .focus--product {
-    max-width: 1200px;
-    margin: 5rem auto 4rem;
-  }
-  .focus--product .focus-heading-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
-    gap: 2rem;
-    align-items: center;
-    margin-bottom: 2.75rem;
-  }
-  .focus--product .focus-tag {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.15rem 0.6rem;
-    border-radius: 999px;
-    border: 1px solid rgba(120, 120, 255, 0.3);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: #444;
-    margin: 0 0 0.7rem;
-  }
-  .focus--product .focus-heading {
-    font-size: 2.3rem;
-    margin: 0;
-  }
-  .focus--product .focus-subtitle {
-    font-size: 0.96rem;
-    color: #555;
-    margin: 0;
-  }
-  .focus--product .focus-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.6rem;
-  }
-  .focus--product .focus-card {
-    position: relative;
-    padding: 1.6rem 1.5rem 1.4rem;
-    border-radius: 16px;
-    background: radial-gradient(circle at top left, #f5f7ff 0, #ffffff 55%);
-    border: 1px solid #e3e3ff;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    overflow: hidden;
-    transition: transform 0.16s ease-out, box-shadow 0.16s ease-out,
-      border-color 0.16s ease-out;
-  }
-  .focus--product .focus-pill {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.2rem 0.6rem;
-    border-radius: 999px;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    background: rgba(37, 99, 235, 0.06);
-    color: #374151;
-  }
-  .focus--product .focus-title {
-    font-size: 1.05rem;
-    margin: 0;
-  }
-  .focus--product .focus-text {
-    font-size: 0.9rem;
-    color: #4b5563;
-    margin: 0 0 0.75rem;
-  }
-  .focus--product .focus-link {
-    margin-top: auto;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: #1f2933;
-  }
-  .focus--product .focus-link span {
-    display: inline-block;
-    transform: translateX(2px);
-    transition: transform 0.16s ease-out;
-  }
-  .focus--product .focus-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    background: radial-gradient(
-      circle at top right,
-      rgba(59, 130, 246, 0.16),
-      transparent 55%
-    );
-    transition: opacity 0.16s ease-out;
-    pointer-events: none;
-  }
-  .focus--product .focus-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
-    border-color: #a5b4fc;
-  }
-  .focus--product .focus-card:hover::after {
-    opacity: 1;
-  }
-  .focus--product .focus-card:hover .focus-link span {
-    transform: translateX(5px);
-  }
-
-  /* ============= Responsiveness ============= */
   @media (max-width: 1024px) {
-    .focus--minimal .focus-grid,
-    .focus--editorial .focus-grid,
-    .focus--product .focus-grid {
+    .focus-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .focus--product .focus-heading-row {
-      grid-template-columns: 1fr;
     }
   }
 
   @media (max-width: 640px) {
-    .focus--minimal,
-    .focus--editorial,
-    .focus--product {
+    .focus {
       margin-top: 3.5rem;
     }
-    .focus--minimal .focus-grid,
-    .focus--editorial .focus-grid,
-    .focus--product .focus-grid {
+    .focus-grid {
       grid-template-columns: 1fr;
     }
   }
