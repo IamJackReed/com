@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-# Use the GitHub Pages gem, which pins a compatible Jekyll + dependencies
+# GitHub Pages Build Environment
 gem "github-pages", group: :jekyll_plugins
 
-# Extra plugins your theme/site uses
+# Plugins you actually use
 gem "jekyll-paginate"
 gem "jekyll-paginate-content"
