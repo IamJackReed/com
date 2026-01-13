@@ -39,9 +39,10 @@
     line-height: 1.6;
   }
 
+  /* 4 → 2 → 1 grid */
   .focus-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
   }
 
@@ -51,10 +52,11 @@
     padding: 1.6rem 1.4rem 1.4rem;
     display: flex;
     flex-direction: column;
-    transition: background-color 0.16s ease-out,
-                border-color 0.16s ease-out,
-                transform 0.16s ease-out,
-                box-shadow 0.16s ease-out;
+    transition:
+      background-color 0.16s ease-out,
+      border-color 0.16s ease-out,
+      transform 0.16s ease-out,
+      box-shadow 0.16s ease-out;
   }
 
   .focus-card-header {
@@ -118,7 +120,7 @@
   /* Responsive behaviour */
   @media (max-width: 1024px) {
     .focus-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
