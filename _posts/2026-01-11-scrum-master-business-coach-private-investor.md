@@ -21,9 +21,9 @@ I partner with organisations to connect strategy, product, and execution — and
 
 ---
 
-<section class="focus focus--editorial">
+<section class="focus focus--editorial" aria-labelledby="focus-heading">
   <p class="focus-kicker">Focus</p>
-  <h2 class="focus-heading">What Keeps Me Up At Night</h2>
+  <h2 class="focus-heading" id="focus-heading">What Keeps Me Up At Night</h2>
   <p class="focus-subtitle">
     The main lenses I use when I’m working with teams, organisations, and markets.
   </p>
@@ -37,7 +37,9 @@ I partner with organisations to connect strategy, product, and execution — and
       <p class="focus-text">
         How groups communicate, resolve conflict, and build the kind of trust that survives real work.
       </p>
-      <a href="{{ site.baseurl }}/People&Teams" class="focus-link">Read articles</a>
+      <a href="{{ site.baseurl }}/People&Teams" class="focus-link">
+        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
+      </a>
     </article>
 
     <article class="focus-card">
@@ -46,9 +48,11 @@ I partner with organisations to connect strategy, product, and execution — and
         <h3 class="focus-title">Product strategy and delivery</h3>
       </header>
       <p class="focus-text">
-        Discovery, prioritisation, and getting meaningful things into the hands of customers without losing the plot.
+        Discovery, prioritisation, and getting meaningful things into customers’ hands without losing the plot.
       </p>
-      <a href="{{ site.baseurl }}/Product" class="focus-link">Read articles</a>
+      <a href="{{ site.baseurl }}/Product" class="focus-link">
+        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
+      </a>
     </article>
 
     <article class="focus-card">
@@ -57,9 +61,11 @@ I partner with organisations to connect strategy, product, and execution — and
         <h3 class="focus-title">Organisation and change</h3>
       </header>
       <p class="focus-text">
-        The dynamics behind how organisations adapt, resist, and slowly (or suddenly) reinvent themselves.
+        The dynamics behind how organisations adapt, resist, and eventually reinvent themselves.
       </p>
-      <a href="{{ site.baseurl }}/Organisation&Change" class="focus-link">Read articles</a>
+      <a href="{{ site.baseurl }}/Organisation&Change" class="focus-link">
+        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
+      </a>
     </article>
 
     <article class="focus-card">
@@ -70,7 +76,9 @@ I partner with organisations to connect strategy, product, and execution — and
       <p class="focus-text">
         Research notes, theses, and reflections from treating markets as a feedback loop, not a casino.
       </p>
-      <a href="{{ site.baseurl }}/posts" class="focus-link">Read articles</a>
+      <a href="{{ site.baseurl }}/posts" class="focus-link">
+        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
+      </a>
     </article>
   </div>
 </section>
