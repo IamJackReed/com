@@ -28,7 +28,7 @@ I partner with organisations to connect strategy, product, and execution — and
     The main lenses I use when I’m working with teams, organisations, and markets.
   </p>
 
-  <section class="row flex-grid">
+    <section class="row flex-grid">
     <!-- Card 1: People & Teams -->
     <article class="box-item">
       <span class="category">
