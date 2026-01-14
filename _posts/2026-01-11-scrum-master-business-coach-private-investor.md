@@ -21,66 +21,98 @@ I partner with organisations to connect strategy, product, and execution — and
 
 ---
 
-<section class="focus focus--editorial" aria-labelledby="focus-heading">
+<section aria-labelledby="focus-heading">
   <p class="focus-kicker">Focus</p>
   <h2 class="focus-heading" id="focus-heading">What Keeps Me Up At Night</h2>
   <p class="focus-subtitle">
     The main lenses I use when I’m working with teams, organisations, and markets.
   </p>
 
-  <div class="focus-grid">
-    <article class="focus-card">
-      <header class="focus-card-header">
-        <p class="focus-section-label">Teams</p>
-        <h3 class="focus-title">People and teams</h3>
-      </header>
-      <p class="focus-text">
-        How groups communicate, resolve conflict, and build the kind of trust that survives real work.
-      </p>
-      <a href="{{ site.baseurl }}/People&Teams" class="focus-link">
-        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
-      </a>
+  <section class="row flex-grid">
+    <!-- Card 1: People & Teams -->
+    <article class="box-item">
+      <span class="category">
+        <span>Teams</span>
+      </span>
+      <div class="box-body">
+        <a class="cover" href="{{ site.baseurl }}/People&Teams">
+          <img src="/assets/img/off.jpg" width="100%" alt="People and teams">
+        </a>
+        <div class="box-info">
+          <span class="date">Teams</span>
+          <a class="post-link" href="{{ site.baseurl }}/People&Teams">
+            <h2 class="post-title">People and teams</h2>
+          </a>
+          <p class="description">
+            Patterns in how groups work, resolve conflict, and build trust that survives real work.
+          </p>
+        </div>
+      </div>
     </article>
 
-    <article class="focus-card">
-      <header class="focus-card-header">
-        <p class="focus-section-label">Product</p>
-        <h3 class="focus-title">Product strategy and delivery</h3>
-      </header>
-      <p class="focus-text">
-        Discovery, prioritisation, and getting meaningful things into customers’ hands without losing the plot.
-      </p>
-      <a href="{{ site.baseurl }}/Product" class="focus-link">
-        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
-      </a>
+    <!-- Card 2: Product -->
+    <article class="box-item">
+      <span class="category">
+        <span>Product</span>
+      </span>
+      <div class="box-body">
+        <a class="cover" href="{{ site.baseurl }}/Product">
+          <img src="/assets/img/off.jpg" width="100%" alt="Product strategy and delivery">
+        </a>
+        <div class="box-info">
+          <span class="date">Product</span>
+          <a class="post-link" href="{{ site.baseurl }}/Product">
+            <h2 class="post-title">Product strategy and delivery</h2>
+          </a>
+          <p class="description">
+            Discovery, prioritisation, and getting meaningful things into customers’ hands without losing the plot.
+          </p>
+        </div>
+      </div>
     </article>
 
-    <article class="focus-card">
-      <header class="focus-card-header">
-        <p class="focus-section-label">Change</p>
-        <h3 class="focus-title">Organisation and change</h3>
-      </header>
-      <p class="focus-text">
-        The dynamics behind how organisations adapt, resist, and eventually reinvent themselves.
-      </p>
-      <a href="{{ site.baseurl }}/Organisation&Change" class="focus-link">
-        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
-      </a>
+    <!-- Card 3: Organisation & Change -->
+    <article class="box-item">
+      <span class="category">
+        <span>Change</span>
+      </span>
+      <div class="box-body">
+        <a class="cover" href="{{ site.baseurl }}/Organisation&Change">
+          <img src="/assets/img/off.jpg" width="100%" alt="Organisation and change">
+        </a>
+        <div class="box-info">
+          <span class="date">Change</span>
+          <a class="post-link" href="{{ site.baseurl }}/Organisation&Change">
+            <h2 class="post-title">Organisation and change</h2>
+          </a>
+          <p class="description">
+            How organisations adapt, resist, and transform over time – and what gets in the way.
+          </p>
+        </div>
+      </div>
     </article>
 
-    <article class="focus-card">
-      <header class="focus-card-header">
-        <p class="focus-section-label">Investing</p>
-        <h3 class="focus-title">Markets and investing</h3>
-      </header>
-      <p class="focus-text">
-        Research notes, theses, and reflections from treating markets as a feedback loop, not a casino.
-      </p>
-      <a href="{{ site.baseurl }}/posts" class="focus-link">
-        Read articles<span class="focus-link-arrow" aria-hidden="true">→</span>
-      </a>
+    <!-- Card 4: Markets & Investing -->
+    <article class="box-item">
+      <span class="category">
+        <span>Investing</span>
+      </span>
+      <div class="box-body">
+        <a class="cover" href="{{ site.baseurl }}/Investing">
+          <img src="/assets/img/off.jpg" width="100%" alt="Markets and investing">
+        </a>
+        <div class="box-info">
+          <span class="date">Investing</span>
+          <a class="post-link" href="{{ site.baseurl }}/Investing">
+            <h2 class="post-title">Markets and investing</h2>
+          </a>
+          <p class="description">
+            Research notes, theses, and reflections from treating markets as a feedback loop, not a casino.
+          </p>
+        </div>
+      </div>
     </article>
-  </div>
+  </section>
 </section>
 
 ---
