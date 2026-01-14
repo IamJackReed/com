@@ -1,12 +1,93 @@
 <style>
-  /* Base container for the focus section */
+  /* ===============================
+   * Global typography & colours
+   * =============================== */
+
+  /* Page background – FT-ish salmon */
+  body {
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.45;              /* tighter but still readable */
+    background-color: #fff1e0;      /* main page background */
+    color: #111111;
+  }
+
+  /* Wrap main content (posts/pages) in a slightly deeper panel */
+  .post,
+  .page,
+  .main-wrapper,
+  .content-area {
+    background-color: #f2dfce;      /* inner panel */
+  }
+
+  /* Headings – Cooper BT (if available) with solid fallbacks */
+  h1, h2, h3, h4, h5, h6,
+  .post-title,
+  .page-title,
+  .site-title {
+    font-family: "Cooper BT", "Cooper Black", "Georgia", "Times New Roman",
+      serif;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
+
+  h1, .post-title, .page-title {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Body text inside posts/pages */
+  .post-content p,
+  .page-content p,
+  .post-body p {
+    line-height: 1.45;
+    margin: 0 0 0.85rem;
+  }
+
+  .post-content ul,
+  .post-content ol,
+  .page-content ul,
+  .page-content ol {
+    margin: 0.75rem 0 0.9rem 1.3rem;
+    line-height: 1.45;
+  }
+
+  /* Optional: tone down overly large default line-height in blockquotes */
+  blockquote {
+    line-height: 1.4;
+  }
+
+  /* Links inside content */
+  .post-content a,
+  .page-content a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  /* ===============================
+   * Focus section (FT-style cards)
+   * =============================== */
+
   .focus {
     max-width: 1160px;
     margin: 4.5rem auto;
     padding: 0 1.5rem;
   }
 
-  /* FT-style editorial treatment */
   .focus--editorial {
     background: #fff9f5;
     border-top: 4px solid #e4cbb0;
@@ -39,7 +120,6 @@
     line-height: 1.6;
   }
 
-  /* 4 → 2 → 1 grid */
   .focus-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -47,7 +127,7 @@
   }
 
   .focus-card {
-    background: #fff;
+    background: #ffffff;
     border: 1px solid #f1ddc9;
     padding: 1.6rem 1.4rem 1.4rem;
     display: flex;
@@ -74,6 +154,7 @@
   .focus-title {
     font-size: 1.05rem;
     margin: 0 0 0.35rem;
+    font-family: "Cooper BT", "Cooper Black", "Georgia", serif;
   }
 
   .focus-text {
@@ -81,6 +162,8 @@
     color: #5f5142;
     line-height: 1.55;
     margin: 0 0 0.9rem;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      system-ui, sans-serif;
   }
 
   .focus-link {
@@ -117,7 +200,7 @@
     text-decoration-thickness: 2px;
   }
 
-  /* Responsive behaviour */
+  /* Responsive behaviour for focus grid */
   @media (max-width: 1024px) {
     .focus-grid {
       grid-template-columns: repeat(2, 1fr);
